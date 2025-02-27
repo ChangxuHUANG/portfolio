@@ -2,6 +2,7 @@ import React, {  useState, useCallback } from "react";
 import { useHistory } from "react-router-dom";  
 import ProjectDetailsModal from "./ProjectDetailsModal";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; 
+import { NavLink } from "react-router-dom";
 
 
 const Projects = ({ resumeProjects, resumeBasicInfo }) => {
@@ -22,6 +23,7 @@ const Projects = ({ resumeProjects, resumeBasicInfo }) => {
         <div className="col-md-12 mx-auto">
           <div className="row mx-auto">
             {resumeProjects.map((project) => (
+               
               <div key={project.title} className="col-sm-12 col-md-6 col-lg-4" style={{ cursor: "pointer" }}>
                 <span className="portfolio-item d-block">
                   <div className="foto" onClick={() => history.push(`/projects/${project.title.replace(/\s+/g, '-')}`)}
@@ -40,6 +42,7 @@ const Projects = ({ resumeProjects, resumeBasicInfo }) => {
                   </div>
                 </span>
               </div>
+              
             ))}
           </div>
         </div>

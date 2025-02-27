@@ -9,7 +9,7 @@ class ProjectDetailsModal extends React.Component {
     return (
       <div>
         <h2>Détails du projet</h2>
-        <p>Projet sélectionné : {id}</p> 
+        <p>Projet sélectionné : {id}</p>  
       </div>
     );
   }

@@ -20,7 +20,7 @@ class App extends Component {
       sharedData: {},
     };
   }
-/*
+
   applyPickedLanguage(pickedLanguage, oppositeLangIconId) {
     this.swapCurrentlyActiveLanguage(oppositeLangIconId);
     document.documentElement.lang = pickedLanguage;
@@ -79,8 +79,8 @@ class App extends Component {
         alert(err);
       },
     });
-  } */
-
+  } 
+/*
 componentDidMount() {
     this.loadSharedData();
     this.applyPickedLanguage(window.$primaryLanguage, window.$secondaryLanguageIconId);
@@ -132,21 +132,21 @@ componentDidMount() {
       const response = await fetch("portfolio_shared_data.json");
       if (!response.ok) throw new Error("Erreur lors du chargement des données partagées");
 
-      const data = await response.json();
+      const data = await response.text(); 
       this.setState({ sharedData: data }, () => {
         document.title = this.state.sharedData.basic_info?.name || "Portfolio";
       });
     } catch (error) {
       alert(error);
     }
-  };
+  };*/ 
   render() {
     
     return (
       <Router>               
           
         <Switch>
-        
+        {/*page d'accueil*/ }
           <Route 
           exact path="/"
           render={() => (
@@ -205,7 +205,13 @@ componentDidMount() {
         <Footer sharedBasicInfo={this.state.sharedData.basic_info} />
         </>
         )} />
-        <Route path="/projects/:id" render={(props) => <ProjectDetailsModal {...props} />}/> 
+         {/*page de projet*/ }
+         <Route
+  path="/projects/:id"
+  render={(props) => (
+    <ProjectDetailsModal {...props} resumeProjects={this.state.resumeData.projects} resumeBasicInfo={this.state.resumeData.basic_info}/>
+  )}
+/> 
 
         </Switch>  
       </Router>
