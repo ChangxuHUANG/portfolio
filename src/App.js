@@ -31,7 +31,7 @@ class App extends Component {
     this.loadResumeFromPath(resumePath);
   }
 
-  swapCurrentlyActiveLanguage(oppositeLangIconId) {
+  /*swapCurrentlyActiveLanguage(oppositeLangIconId) {
     var pickedLangIconId =
       oppositeLangIconId === window.$primaryLanguageIconId
         ? window.$secondaryLanguageIconId
@@ -42,7 +42,23 @@ class App extends Component {
     document
       .getElementById(pickedLangIconId)
       .setAttribute("filter", "brightness(40%)");
-  }
+  }*/
+      swapCurrentlyActiveLanguage(oppositeLangIconId) {
+        var pickedLangIconId =
+          oppositeLangIconId === window.$primaryLanguageIconId
+            ? window.$secondaryLanguageIconId
+            : window.$primaryLanguageIconId;
+      
+        const oppositeElement = document.getElementById(oppositeLangIconId);
+        if (oppositeElement) {
+          oppositeElement.removeAttribute("filter", "brightness(40%)");
+        }
+        
+        const pickedElement = document.getElementById(pickedLangIconId);
+        if (pickedElement) {
+          pickedElement.setAttribute("filter", "brightness(40%)");
+        } 
+      }
 
   componentDidMount() {
     this.loadSharedData();
