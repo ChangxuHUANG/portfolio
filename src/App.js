@@ -1,24 +1,26 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router, Switch, Route, useLocation  } from "react-router-dom";  
 import $ from "jquery";
 import "./App.scss";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import About from "./components/About";
 import Experience from "./components/Experience";
-import Projects from "./components/Projects";
+import Projects from "./components/Projects"; 
 import Skills from "./components/Skills";
+import ProjectDetailsModal from "./components/ProjectDetailsModal"; 
 
 class App extends Component {
 
   constructor(props) {
-    super();
+    super(); 
     this.state = {
       foo: "bar",
       resumeData: {},
       sharedData: {},
     };
   }
-
+/*
   applyPickedLanguage(pickedLanguage, oppositeLangIconId) {
     this.swapCurrentlyActiveLanguage(oppositeLangIconId);
     document.documentElement.lang = pickedLanguage;
@@ -77,12 +79,79 @@ class App extends Component {
         alert(err);
       },
     });
+  } */
+
+componentDidMount() {
+    this.loadSharedData();
+    this.applyPickedLanguage(window.$primaryLanguage, window.$secondaryLanguageIconId);
   }
 
+  applyPickedLanguage = (pickedLanguage, oppositeLangIconId) => {
+    this.swapCurrentlyActiveLanguage(oppositeLangIconId);
+    document.documentElement.lang = pickedLanguage;
+
+    const resumePath =
+      document.documentElement.lang === window.$primaryLanguage
+        ? `res_primaryLanguage.json`
+        : `res_secondaryLanguage.json`;
+
+    this.loadResumeFromPath(resumePath);
+  };
+
+  swapCurrentlyActiveLanguage = (oppositeLangIconId) => {
+    const pickedLangIconId =
+      oppositeLangIconId === window.$primaryLanguageIconId
+        ? window.$secondaryLanguageIconId
+        : window.$primaryLanguageIconId;
+
+        const oppositeElement = document.getElementById(oppositeLangIconId);
+        if (oppositeElement) {
+          oppositeElement.removeAttribute("filter", "brightness(40%)");
+        }
+        
+        const pickedElement = document.getElementById(pickedLangIconId);
+        if (pickedElement) {
+          pickedElement.setAttribute("filter", "brightness(40%)");
+        } 
+  };
+
+  loadResumeFromPath = async (path) => {
+    try {
+      const response = await fetch(path);
+      if (!response.ok) throw new Error("Erreur lors du chargement des données");
+      
+      const data = await response.json();
+      this.setState({ resumeData: data });
+    } catch (error) {
+      alert(error);
+    }
+  };
+
+  loadSharedData = async () => {
+    try {
+      const response = await fetch("portfolio_shared_data.json");
+      if (!response.ok) throw new Error("Erreur lors du chargement des données partagées");
+
+      const data = await response.json();
+      this.setState({ sharedData: data }, () => {
+        document.title = this.state.sharedData.basic_info?.name || "Portfolio";
+      });
+    } catch (error) {
+      alert(error);
+    }
+  };
   render() {
+    
     return (
-      <div>
-        <Header sharedData={this.state.sharedData.basic_info} />
+      <Router>               
+          
+        <Switch>
+        
+          <Route 
+          exact path="/"
+          render={() => (
+          <>
+          <Header sharedData={this.state.sharedData.basic_info} />
         <div className="col-md-12 mx-auto text-center language">
           <div
             onClick={() =>
@@ -116,7 +185,7 @@ class App extends Component {
               id={window.$secondaryLanguageIconId}
             ></span>
           </div>
-        </div>
+        </div>  
         <About
           resumeBasicInfo={this.state.resumeData.basic_info}
           sharedBasicInfo={this.state.sharedData.basic_info}
@@ -134,9 +203,14 @@ class App extends Component {
           resumeBasicInfo={this.state.resumeData.basic_info}
         />
         <Footer sharedBasicInfo={this.state.sharedData.basic_info} />
-      </div>
+        </>
+        )} />
+        <Route path="/projects/:id" render={(props) => <ProjectDetailsModal {...props} />}/> 
+
+        </Switch>  
+      </Router>
     );
   }
 }
 
-export default App;
+export default App; 
