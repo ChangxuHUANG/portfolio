@@ -426,3 +426,213 @@ footer a:focus {
 	margin-top: 50px;
 	font-size: 22px;
 }
+//page de projet
+.container-projet {
+    display: flex;
+    flex-direction: column;   
+	align-items: center;
+    width: 100%;
+    /*margin: auto;*/ 
+  }
+  
+  
+.projetName{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+	margin-top: 20px;
+}
+.banner-projet {
+    
+    
+    /*margin: 0 auto;*/ 
+}
+.banner-projet img,
+.contenu-projet img {
+    max-width: 100%;
+    height: auto;
+} 
+.sectionProjet{
+	display: flex;
+	flex-direction: column;
+	align-items: center; 
+	border: 2px black solid;  
+	border-radius: 10px;
+	width: 77%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #1F1F1F; 
+}
+.fonctionnement h2,
+.missions h2,
+.competences h2 {
+  font-size: 23px; /* ou la taille que tu veux */
+} 
+
+.titleProjet{
+	border-bottom: 2px black solid;;
+	width: 100%;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	
+}
+.infoProjet{
+    display: flex;
+    flex-direction: row;
+	justify-content:center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	
+	gap: 14px;
+	width: 100%; 
+	
+}
+.infoProjet ul {
+    
+	padding-left: 18px;
+	
+}
+.infoProjet .fonctionnement{
+    width: 25%;
+    font-size: 18px;
+	font-size: 20px;
+	padding-top: 8px;
+}
+.infoProjet .missions{
+    width: 35%; 
+    font-size: 18px; 
+	padding-top: 8px;
+	font-size: 20px;
+
+}
+.infoProjet .competences{
+	width: 30%;
+	font-size: 18px; 
+	padding-top: 8px;
+	font-size: 20px;
+	
+}
+/*.infoProjet div {
+    flex: 1 1 300px;
+    text-align: center;
+}
+
+.infoProjet ul {
+    padding-left: 18px;
+    text-align: left;
+}*/
+
+//page de projet header
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*background-color: #222;*/
+    padding: 10px 35px;
+    color: black;
+    font-size: 20px;
+	border-bottom: 2px solid #ccc;  
+}
+
+.name {
+    
+	font-size: 18px;
+	
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.buttons button {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.buttons button:hover {
+    text-decoration: underline;
+}
+
+/* Styles pour le bouton GitHub */
+.githubButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    color: black;
+    font-size: 30px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.githubButton:hover {
+    transform: scale(1.2);
+}
+// contact
+.contact {
+	background-color: #333;
+	color: white;
+	text-align: center;
+	padding: 15px 0;
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	font-size: 16px;
+	margin-top: 20px;
+  }
+  
+  .footer a {
+	color: #ff6600;
+	text-decoration: none;
+	font-weight: bold;
+  }
+  
+  .footer a:hover {
+	text-decoration: underline;
+  }
+  
+  @media (max-width: 412px) {
+    
+    .infoProjet {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .infoProjet div {
+        width: 100%;
+    }
+	.infoProjet .missions{
+		width: 100%;
+		padding-left: 10px;
+	}
+	.infoProjet .fonctionnement{
+		width: 100%;
+		padding-left: 10px;
+	}
+	.infoProjet .competences{
+		width: 100%;
+		padding-left: 10px;
+	}
+	.infoProjet{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		
+		gap: 14px;
+		width: 100%; 
+		
+	}
+	.sectionProjet{
+		width: 80%;
+	}
+}
+  

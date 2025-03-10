@@ -1,0 +1,40 @@
+/*.container-projet {
+    display: flex;
+    flex-direction: column; 
+    margin: auto;
+    
+  }
+  .banner-projet, .infoProjet, .contenu-projet {
+    width: 100%;
+  }
+  
+.projetName{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.banner-projet img{
+    width: 80%; 
+    height: 750px;
+    
+}
+
+.contenu-projet {
+    
+}  
+
+.infoProjet{
+    display: flex;
+    flex-direction: row;
+}
+.infoProjet .presentation{
+    width: 15%;
+}
+.infoProjet .fonctionnement{
+    width: 30%;
+    
+}
+.infoProjet .missions{
+    width: 40%;
+    
+}*/

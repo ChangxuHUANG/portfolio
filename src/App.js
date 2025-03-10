@@ -26,8 +26,8 @@ class App extends Component {
     document.documentElement.lang = pickedLanguage;
     var resumePath =
       document.documentElement.lang === window.$primaryLanguage
-        ? `res_primaryLanguage.json`
-        : `res_secondaryLanguage.json`;
+        ? `/res_primaryLanguage.json`
+        : `/res_secondaryLanguage.json`;
     this.loadResumeFromPath(resumePath);
   }
 
@@ -84,7 +84,7 @@ class App extends Component {
 
   loadSharedData() {
     $.ajax({
-      url: `portfolio_shared_data.json`,
+      url: `/portfolio_shared_data.json`, 
       dataType: "json",
       cache: false,
       success: function (data) {
@@ -180,7 +180,7 @@ componentDidMount() {
           >
             <span
               className="iconify language-icon mr-5"
-              data-icon="twemoji-flag-for-flag-united-kingdom"
+              data-icon="twemoji-flag-for-flag-france"
               data-inline="false"
               id={window.$primaryLanguageIconId}
             ></span>
@@ -196,7 +196,7 @@ componentDidMount() {
           >
             <span
               className="iconify language-icon"
-              data-icon="twemoji-flag-for-flag-poland"
+              data-icon="twemoji-flag-for-flag-united-kingdom"
               data-inline="false"
               id={window.$secondaryLanguageIconId}
             ></span>
@@ -225,7 +225,7 @@ componentDidMount() {
          <Route
   path="/projects/:id"
   render={(props) => (
-    <ProjectDetailsModal {...props} resumeProjects={this.state.resumeData.projects} resumeBasicInfo={this.state.resumeData.basic_info}/>
+    <ProjectDetailsModal {...props} resumeProjects={this.state.resumeData.projects }/>
   )}
 /> 
 

@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Icon } from "@iconify/react";
-import angularIcon from "@iconify/icons-logos/angular-icon";
+import javascriptIcon from "@iconify/icons-logos/javascript";
 import reactIcon from "@iconify/icons-logos/react";
-import vueIcon from "@iconify/icons-logos/vue";
+import nodejsIcon from "@iconify/icons-logos/nodejs";
 
 class About extends Component {
   render() {
@@ -31,16 +31,16 @@ class About extends Component {
                     alt="Avatar placeholder"
                   />
                   <Icon
-                    icon={angularIcon}
-                    style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
+                    icon={javascriptIcon}
+                    style={{ fontSize: "300%", margin: "9% 5% 0 5%" }}
                   />
                   <Icon
                     icon={reactIcon}
-                    style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
+                    style={{ fontSize: "300%", margin: "9% 5% 0 5%" }}
                   />
                   <Icon
-                    icon={vueIcon}
-                    style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
+                    icon={nodejsIcon} 
+                    style={{ fontSize: "300%", margin: "9% 5% 0 5%" }}
                   />
                 </span>
               </div>
@@ -72,7 +72,7 @@ class About extends Component {
                     className="card-body font-trebuchet text-justify ml-3 mr-3"
                     style={{
                       height: "auto",
-                      fontSize: "132%",
+                      fontSize: "162%", 
                       lineHeight: "200%",
                     }}
                   >

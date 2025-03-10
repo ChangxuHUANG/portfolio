@@ -1,23 +1,43 @@
 {
     "basic_info": {
-      "description_header": "Hi",
-      "description": "👋 I'm Davina Griss. Fictional person for preview purposes :) I'm working with newest front-end frameworks like Angular, React and Vue. What you are seeing now is portfolio template from Dorota1997. If you like this portfolio template, make sure to ⭐ the repository to make it more recognizable for other users. Thank you 💜",
+      "description_header": "Bonjour",
+      "description": "👋 Je m'appelle Changxu HUANG, je travaille du côté front-end en Javascript et avec HTML 5,CSS 3, React, j'utilise Node.js et Express pour accomplir les missions de Back-end. J'ai réalisé plusieurs projets de Front-end et Back-end dans le cadre de parcours de Openclassroom. ",
       "section_name": {
-        "about": "About me",
-        "projects": "Projects",
-        "skills": "Skills",
-        "experience": "Experience"
+        "about": "A propos de moi",
+        "projects": "Projets",
+        "skills": "Compétences",
+        "experience": "Liste des projets"
       }
     },
     "projects": [
       {
-        "title": "Animal Shelter",
-        "startDate": "2020",
+        "title": "Sophie Bluel",
+        "startDate": "2024",
         "description": "The most expanded application I had opportunity to work with. I've learned many technologies and my code was reviewed by awesome curator. Application handles all adoption processess and allows to store all evidence on adopting animals from animal shelter.",
         "images": [
-          "images/portfolio/animal-shelter/p1.jpg",
+          "/images/portfolio/projetPhotographe/Sophie Bluel - CoverPhoto.jpg",
           "images/portfolio/animal-shelter/p2.jpg"
         ],
+        "imageBanner": 
+          "/images/portfolio/projetPhotographe/photographe-banner.jpg",
+        "imageContenu":"/images/portfolio/projetPhotographe/photographe-contenu.avif",
+        "presentation":"Site portfolio de l'architecte d’intérieur",
+        "fonctionnement":[
+          "Connexion de l'utilisateur",
+          "Ajout des oeuvres ",
+          "Mis à jour des oeuvres téléchargées"
+        ],
+        "missions":[
+          "Création de la page de présentation des travaux de l'architecte",
+          "Réalisation de la page de connexion de l'administrateur du site",
+          "Création de la modale permettant d'uploader de nouveaux médias"
+        ],
+        "competences":[
+          "Créer des pages web dynamiques avec JavaScript",
+          "Communiquer avec des APIs",
+          "Créer le site web interactif et fonctionnel"
+        ],
+        "gitHub":"https://github.com/ChangxuHUANG/Projet-3",
         "url": "",
         "technologies": [
           {
@@ -35,13 +55,34 @@
         ]
       },
       {
-        "title": "Photography",
-        "startDate": "2018",
+        "title": "Kasa",
+        "startDate": "2024",
         "description": "Personal project for study subject. I was responsible for testing photography application that optimizes images with popular algorithms used by graphic editors like Pixlr or Adobe Photoshop. I've earned A grade :)",
         "images": [
           "images/portfolio/photography/p1.jpg",
           "images/portfolio/photography/p2.jpg"
         ],
+        "imageBanner": 
+          "/images/portfolio/projetKasa/kasa-banner.jpg",
+        "imageContenu":"/images/portfolio/projetKasa/kasa-contenu.jpg",
+        "presentation":"Apllication web de location immobilière",
+        "fonctionnement":[
+          "Présentation des propriétés disponibles",
+          "Gallerie des photos ",
+          "Collapse interactif enfermant des informations de logement",
+          "Version responsive"
+        ],
+        "missions":[
+          "Réalisation de la page de liste des logements",
+          "Création de collapse et caroussel de la page de logement",
+          "Mise en page des données de logements"
+        ],
+        "competences":[
+          "Maîtrise de React et de React Routet",
+          "utilisation de SASS et l'implémentation d’animations CSS",
+          "Créer des applications web interactives et visuellement attrayantes"
+        ],
+        "gitHub":"https://github.com/ChangxuHUANG/Projet-5",
         "url": "https://github.com",
         "technologies": [
           {
@@ -55,13 +96,34 @@
         ]
       },
       {
-        "title": "3D Object Viewer",
-        "startDate": "2015",
+        "title": "Mon Vieux Grimoire",
+        "startDate": "2025",
         "description": "One of the first apps I was working on my internship. I had to develop front-end implementation for app that shows 3D models of known buildings. This was also my first project in Angular framework. I've learned a lot!",
         "images": [
           "images/portfolio/adventure/p1.jpg",
           "images/portfolio/adventure/p2.jpg"
         ],
+        "imageBanner": 
+          "/images/portfolio/projetVieuxGrimoire/vieuxGrimoire-banner.jpg",
+        "imageContenu":"/images/portfolio/projetVieuxGrimoire/vieuxGrimoire-contenu.jpg",
+        "presentation":"Site de notation de livres",
+        "fonctionnement":[
+          "Ajout de nouveaux livres",
+          "Notation des livres ",
+          "Connexion de l'utilisateur",
+          "Mise à jour des livres ajoutés"
+        ],
+        "missions":[
+          "Création de système de connexion du côté back-end",
+          "Création de système de notation du côté back-end",
+          "Réalisation de fonction de mise à jour des livres"
+        ],
+        "competences":[
+          "Développement back-end avec Node.js, Express, et MongoDB",
+          "Maîtrise des opérations CRUD, de la sécurité des données, et de l'authentification",
+          "Expérience avec l'architecture MVC et la création d'API RESTful"
+        ],
+        "gitHub":"https://github.com/ChangxuHUANG/projet6-VieuxGrimoire",
         "url": "https://github.com",
         "technologies": [
           {
@@ -81,37 +143,49 @@
     ],
     "experience": [
       {
-        "company": "DefOpenSource",
-        "title": "Front-End Developer",
-        "years": "10.2019 - present",
+        "company": "Sophie Bluel",
+        "title": "Front-End Développeur",
+        "years": "",
+        "icon":"fab fa-js",
         "mainTech": [
-          "Angular 8/9/10"
+          "Javascript"
         ],
         "technologies": [
-          "REST API",
-          "RxJS",
-          "JavaScript",
-          "Bootstrap",
-          "MDBootstrap",
-          "EF Core",
-          ".NET Core",
-          "SignalR",
-          "Angular Material"
+          "Html 5",
+          "CSS 3",     
+          "REST API"
+          
         ]
       },
       {
-        "company": "Serros Solutions",
-        "title": "Intern",
+        "company": "Kasa",
+        "title": "Front-End Développeur",
         "years": "01.2018 - 09.2019",
+        "icon":"fab fa-react",
         "mainTech": [
-          "Angular 7/8"
+          "React"
         ],
         "technologies": [
-          "RxJS",
-          "Django",
-          "PHP",
+          "Sass",
           "JavaScript",
-          "DHTMLX Gantt"
+          "TypeScript"
+                 
+        ]
+      },
+      {
+        "company": "Mon vieux grimoire",
+        "title": "Front-End Développeur",
+        "years": "01.2018 - 09.2019",
+        "icon":"fab fa-node-js", 
+        "mainTech": [
+          "React Node.js"
+        ],
+        "technologies": [
+          "JavaScript",
+          "Sass",
+          "Express",
+          "MongoDB" 
+          
         ]
       }
     ]

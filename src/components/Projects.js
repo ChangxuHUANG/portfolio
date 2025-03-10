@@ -31,6 +31,7 @@ const Projects = ({ resumeProjects, resumeBasicInfo }) => {
                     <div>
                       <img
                         src={project.images[0]}
+                        
                         alt="projectImages"
                         height="230"
                         style={{ marginBottom: 0, paddingBottom: 0, position: "relative" }}
