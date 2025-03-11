@@ -1,8 +1,6 @@
-import React, {  useState, useCallback } from "react"; 
+import React from "react"; 
 import { useHistory } from "react-router-dom";  
-import ProjectDetailsModal from "./ProjectDetailsModal";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; 
-import { NavLink } from "react-router-dom";
+
 
 
 const Projects = ({ resumeProjects, resumeBasicInfo }) => {

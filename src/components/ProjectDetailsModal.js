@@ -91,8 +91,8 @@ class ProjectDetailsModal extends React.Component {
       </div>
       <div className="contact">
   
-    <p>📞 Téléphone : <a href="tel:+33612345678">+33 7 84 19 73 33</a></p> 
-    <p>📧 Email : <a href="mailto:changxuhuang@gmail.com">changxuhuang@gmail.com</a></p>
+    <p><span role="img" aria-label="Téléphone">📞</span>Téléphone : <a href="tel:+33612345678">+33 7 84 19 73 33</a></p> 
+    <p> <span role="img" aria-label="Email">📧</span> Email: <a href="mailto:changxuhuang@gmail.com">changxuhuang@gmail.com</a></p>
   
 </div>
       </div>

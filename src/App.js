@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Switch, Route, useLocation  } from "react-router-dom";  
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";  
 import $ from "jquery";
 import "./App.scss";
 import Header from "./components/Header";
