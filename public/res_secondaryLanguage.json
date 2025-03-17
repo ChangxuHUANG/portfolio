@@ -155,7 +155,8 @@
           "CSS 3",     
           "REST API"
           
-        ]
+        ],
+        "probleme":"Récupération des oeuvres par APIs"
       },
       {
         "company": "Kasa",
@@ -170,7 +171,8 @@
           "JavaScript",
           "TypeScript"
                  
-        ]
+        ],
+        "probleme":"strcuturation des composants du site par router"
       },
       {
         "company": "Mon vieux grimoire",
@@ -186,7 +188,8 @@
           "Express",
           "MongoDB" 
           
-        ]
+        ],
+        "probleme":"création de système d'authentification"
       }
     ]
   }
