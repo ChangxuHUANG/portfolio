@@ -84,7 +84,9 @@ class ProjectDetailsModal extends React.Component {
           </div>  
           </div>
         <div className="contenu-projet">
-        <img src={project.imageContenu} alt="photoProjet"/>  
+          {project.imageContenu.map((photo,index)=>(
+            <img src={photo} key = {index }alt="photoProjet"/> ))}
+         
         
         </div>
       

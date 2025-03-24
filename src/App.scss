@@ -447,6 +447,11 @@ footer a:focus {
     
     /*margin: 0 auto;*/ 
 }
+.contenu-projet {
+	display: flex;
+	flex-direction: column;
+	align-items: center; 
+}
 .banner-projet img,
 .contenu-projet img {
     max-width: 100%;

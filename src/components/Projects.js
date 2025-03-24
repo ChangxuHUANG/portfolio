@@ -22,7 +22,7 @@ const Projects = ({ resumeProjects, resumeBasicInfo }) => {
           <div className="row mx-auto">
             {resumeProjects.map((project) => (
                
-              <div key={project.title} className="col-sm-12 col-md-6 col-lg-4" style={{ cursor: "pointer" }}>
+              <div key={project.title} className="col-sm-12 col-md-6 col-lg-6" style={{ cursor: "pointer" }}>
                 <span className="portfolio-item d-block">
                   <div className="foto" onClick={() => history.push(`/projects/${project.title.replace(/\s+/g, '-')}`)}
                   > 
@@ -31,7 +31,7 @@ const Projects = ({ resumeProjects, resumeBasicInfo }) => {
                         src={project.images[0]}
                         
                         alt="projectImages"
-                        height="230"
+                        height="330" 
                         style={{ marginBottom: 0, paddingBottom: 0, position: "relative" }}
                       />
                       <span className="project-date">{project.startDate}</span>

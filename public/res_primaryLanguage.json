@@ -15,12 +15,15 @@
         "startDate": "2024",
         "description": "The most expanded application I had opportunity to work with. I've learned many technologies and my code was reviewed by awesome curator. Application handles all adoption processess and allows to store all evidence on adopting animals from animal shelter.",
         "images": [
-          "/images/portfolio/projetPhotographe/Sophie Bluel - CoverPhoto.jpg",
+          "images/couverture/sophieBluel.png", 
           "images/portfolio/animal-shelter/p2.jpg"
         ],
         "imageBanner": 
           "/images/portfolio/projetPhotographe/photographe-banner.jpg",
-        "imageContenu":"/images/portfolio/projetPhotographe/photographe-contenu.avif",
+        "imageContenu":[
+          "/images/portfolio/projetPhotographe/Sophie Bluel - 4.png",
+          "/images/portfolio/projetPhotographe/photographe-contenu.jpg" 
+        ],
         "presentation":"Site portfolio de l'architecte d’intérieur",
         "fonctionnement":[
           "Connexion de l'utilisateur",
@@ -55,16 +58,16 @@
         ]
       },
       {
-        "title": "Kasa",
+        "title": "kasa",    
         "startDate": "2024",
         "description": "Personal project for study subject. I was responsible for testing photography application that optimizes images with popular algorithms used by graphic editors like Pixlr or Adobe Photoshop. I've earned A grade :)",
         "images": [
-          "images/portfolio/photography/p1.jpg",
+          "images/couverture/Kasa.png",
           "images/portfolio/photography/p2.jpg"
         ],
         "imageBanner": 
           "/images/portfolio/projetKasa/kasa-banner.jpg",
-        "imageContenu":"/images/portfolio/projetKasa/kasa-contenu.jpg",
+        "imageContenu":["/images/portfolio/projetKasa/kasa-contenu.jpg"], 
         "presentation":"Apllication web de location immobilière",
         "fonctionnement":[
           "Présentation des propriétés disponibles",
@@ -100,12 +103,15 @@
         "startDate": "2025",
         "description": "One of the first apps I was working on my internship. I had to develop front-end implementation for app that shows 3D models of known buildings. This was also my first project in Angular framework. I've learned a lot!",
         "images": [
-          "images/portfolio/adventure/p1.jpg",
+          "images/couverture/vieuxGrimoire.png",
           "images/portfolio/adventure/p2.jpg"
         ],
         "imageBanner": 
           "/images/portfolio/projetVieuxGrimoire/vieuxGrimoire-banner.jpg",
-        "imageContenu":"/images/portfolio/projetVieuxGrimoire/vieuxGrimoire-contenu.jpg",
+        "imageContenu":[
+          "/images/portfolio/projetVieuxGrimoire/vieuxGrimoire-contenu.jpg",
+          "/images/portfolio/projetVieuxGrimoire/vieuxGrimoire4.jpg"
+        ],
         "presentation":"Site de notation de livres",
         "fonctionnement":[
           "Ajout de nouveaux livres",
@@ -124,6 +130,52 @@
           "Expérience avec l'architecture MVC et la création d'API RESTful"
         ],
         "gitHub":"https://github.com/ChangxuHUANG/projet6-VieuxGrimoire",
+        "url": "https://github.com",
+        "technologies": [
+          {
+            "class": "devicon-angularjs-plain",
+            "name": "Angular"
+          },
+          {
+            "class": "devicon-typescript-plain",
+            "name": "TypeScript"
+          },
+          {
+            "class": "devicon-csharp-plain",
+            "name": "C#"
+          }
+        ]
+      },
+      {
+        "title": "Nina Carducci",
+        "startDate": "2024",
+        "description": "One of the first apps I was working on my internship. I had to develop front-end implementation for app that shows 3D models of known buildings. This was also my first project in Angular framework. I've learned a lot!",
+        "images": [
+          "images/couverture/ninaCarducci.png",
+          "images/portfolio/adventure/p2.jpg"
+        ],
+        "imageBanner": 
+          "/images/portfolio/projetNina/ninaBanner.jpg",
+        "imageContenu":[
+          "/images/portfolio/projetNina/ninaContenu1.jpg",
+          "/images/portfolio/projetNina/ninaContenu2.jpg"
+        ],
+        "presentation":"Site personnel de photographe",
+        "fonctionnement":[
+          "Gallerie des photos selon des thèmes différents",
+          "Présentation de photographe"
+        ],
+        "missions":[
+          "Débugger le site",
+          "Améliorer le chargement et l'accessibilité du site",
+          "Optimiser les images du site"
+        ],
+        "competences":[
+          "Analyse des performances et codes du site",
+          "Optimisation du référencement (SEO)",
+          "Optimisation de l'accessibilté"
+        ],
+        "gitHub":"https://github.com/ChangxuHUANG/Projet4",
         "url": "https://github.com",
         "technologies": [
           {
