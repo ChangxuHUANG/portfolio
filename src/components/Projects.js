@@ -32,7 +32,7 @@ const Projects = ({ resumeProjects, resumeBasicInfo }) => {
                         
                         alt="projectImages"
                         height="330" 
-                        style={{ marginBottom: 0, paddingBottom: 0, position: "relative" }}
+                        style={{ marginBottom: 0, paddingBottom: 0, position: "relative",maxWidth: "331px" }} 
                       />
                       <span className="project-date">{project.startDate}</span>
                       <br />
