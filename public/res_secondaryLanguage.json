@@ -148,7 +148,7 @@
       },
       {
         "title": "Nina Carducci",
-        "startDate": "2024",
+        "startDate": "2025",
         "description": "One of the first apps I was working on my internship. I had to develop front-end implementation for app that shows 3D models of known buildings. This was also my first project in Angular framework. I've learned a lot!",
         "images": [
           "images/couverture/ninaCarducci.png",
@@ -242,6 +242,23 @@
           
         ],
         "probleme":"création de système d'authentification"
+      },
+      {
+        "company": "Nina Carducci",
+        "title": "Front-End Developer",
+        "years": "",
+        "icon":"fab fa-js",
+        "mainTech": [
+          "Javascript"
+        ],
+        "technologies": [
+          "Html 5",
+          "CSS 3",     
+          "REST API",
+          "Google lighthouse"
+          
+        ],
+        "probleme":"Récupération des oeuvres par APIs"
       }
     ]
   }
