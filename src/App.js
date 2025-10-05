@@ -26,9 +26,6 @@ class App extends Component {
       sharedData: {},
     };
   }
-  componentDidMount() {
-    AOS.init({ duration: 1000,once: true });
-  }
   
 
   applyPickedLanguage(pickedLanguage, oppositeLangIconId) {
