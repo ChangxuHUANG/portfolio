@@ -18,7 +18,7 @@ class About extends Component {
     return (
       <section id="about">
         <div className="col-md-12">
-          <h1 style={{ color: "black" }}>
+          <h1 style={{ color: "black", paddingBottom:"15px"  }}>
             <span>{sectionName}</span>
           </h1>
           <div className="row center mx-auto mb-5">
@@ -74,12 +74,13 @@ class About extends Component {
                       height: "auto",
                       fontSize: "162%", 
                       lineHeight: "200%",
+                      whiteSpace: "pre-line"
                     }}
                   >
                     <br />
-                    <span className="wave">{hello} :) </span>
+                    <span className="wave">{hello} : </span>
                     <br />
-                    <br />
+                    
                     {about}
                   </div>
                 </div>

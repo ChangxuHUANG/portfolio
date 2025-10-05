@@ -297,6 +297,45 @@ header h1 {
 	top: -36px;
 }
 
+/*.project-card {
+  transition: all 0.3s ease-in-out;
+  
+}
+
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+.project-card img {
+  transition: transform 0.4s ease;
+}
+
+[data-aos] {
+  background-color: rgba(255,0,0,0.2); 
+}*/
+.project-card {
+  opacity: 0;                 /* invisible au départ */
+  transform: translateY(50px); /* décalage vers le bas */
+  transition: all 0.6s ease-out; /* transition douce */
+}
+
+.project-card.show {
+  opacity: 1;                 /* devient visible */
+  transform: translateY(0);   /* revient à sa position normale */
+}
+.project-card img:hover {
+  transform: scale(1.1);
+}
+.large-badge {
+  font-size: 20px !important;
+  padding: 0.5rem 1rem;
+}
+.mid-badge {
+  font-size: 15px !important;
+  padding: 0.5rem 1rem;
+}
+
+
 .bar-expand {
 	position: absolute;
 	left: 0;

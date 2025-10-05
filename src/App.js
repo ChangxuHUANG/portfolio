@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useEffect, useRef }from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";  
 import $ from "jquery";
 import "./App.scss";
@@ -9,6 +9,12 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects"; 
 import Skills from "./components/Skills";
 import ProjectDetailsModal from "./components/ProjectDetailsModal"; 
+import AOS from "aos";
+import "aos/dist/aos.css";
+import ScrollToTop from "./components/ScrollToTop";
+
+
+
 
 class App extends Component {
 
@@ -20,6 +26,10 @@ class App extends Component {
       sharedData: {},
     };
   }
+  componentDidMount() {
+    AOS.init({ duration: 1000,once: true });
+  }
+  
 
   applyPickedLanguage(pickedLanguage, oppositeLangIconId) {
     this.swapCurrentlyActiveLanguage(oppositeLangIconId);
@@ -160,7 +170,7 @@ componentDidMount() {
     
     return (
       <Router>               
-          
+          <ScrollToTop /> 
         <Switch>
         {/*page d'accueil*/ }
           <Route 
@@ -218,7 +228,7 @@ componentDidMount() {
           resumeExperience={this.state.resumeData.experience}
           resumeBasicInfo={this.state.resumeData.basic_info}
         />
-        <Footer sharedBasicInfo={this.state.sharedData.basic_info} />
+        <Footer id = "footer" sharedBasicInfo={this.state.sharedData.basic_info} />
         </>
         )} />
          {/*page de projet*/ }

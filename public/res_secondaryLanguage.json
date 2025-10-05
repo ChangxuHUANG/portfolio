@@ -1,7 +1,7 @@
 {
     "basic_info": {
       "description_header": "Hello",
-      "description": "👋 My name is Changxu HUANG, I work on the front-end side in Javascript and with HTML 5, CSS 3, React, I use Node.js and Express to accomplish the Back-end missions. I have carried out several Front-end and Back-end projects as part of Openclassroom courses.",
+      "description": "👋 My name is Changxu HUANG, and I have been a junior web developer for one year. I discovered this profession during a conference and was immediately passionate about the process of creating a website, which combines logic, programming, and a sense of design.\n\nI then pursued web development training at OpenClassrooms, where I learned the fundamentals of algorithms and their application in various programming languages. Today, I mainly work on the front-end using JavaScript, HTML5, CSS3, and React, while also using Node.js and Express for back-end tasks. I have completed several personal projects in both front-end and back-end, which allowed me to consolidate my skills and develop a comprehensive approach to web development.",
       "section_name": {
         "about": "About me",
         "projects": "Projects",
@@ -13,13 +13,13 @@
       {
         "title": "Sophie Bluel",
         "startDate": "2024",
-        "description": "Najbardziej rozbudowana aplikacja nad którą miałam okazję pracować. Poznałam dużo technologii a mój kod by sprawdzany przez super opiekuna. Aplikacja obsługuje wszystkie procesy adopcji i pozwala na przechowywanie wszelkiej dokumentacji związanej z adopcją zwierząt ze schroniska.",
+        "description": "Portfolio website for an interior designer, equipped with a login system and a work update system",
         "images": [
           "images/couverture/sophieBluel.png", 
           "images/portfolio/animal-shelter/p2.jpg"
         ],
         "imageBanner": 
-          "/images/portfolio/projetPhotographe/photographe-banner.jpg",
+          "/images/portfolio/projetPhotographe/photographe-banner1.png",
         "imageContenu":[
           "/images/portfolio/projetPhotographe/Sophie Bluel - 4.png",
           "/images/portfolio/projetPhotographe/photographe-contenu.jpg" 
@@ -45,22 +45,22 @@
         "technologies": [
           {
             "class": "devicon-angularjs-plain",
-            "name": "Angular"
+            "name": "Javascript"
           },
           {
             "class": "devicon-typescript-plain",
-            "name": "TypeScript"
+            "name": "REST API"
           },
           {
             "class": "devicon-csharp-plain",
-            "name": "C#"
+            "name": "Html 5"
           }
         ]
       },
       {
         "title": "kasa",
         "startDate": "2024",
-        "description": "Osobisty projekt na przedmiot ze studiów. Byłam odpowiedzilna za testowanie aplikacji, która optymalizuje zdjęcia z pomocą popularnych algorytmów używanych przed edytory grafiki takie jak Pixlr czy Adobe Photoshop. Otrzymałam 5-tkę za projekt :)",
+        "description": "A rental property website with an interactive carousel to display photos and dynamic information bars",
         "images": [
           "images/couverture/Kasa.png",
           "images/portfolio/photography/p2.jpg"
@@ -94,14 +94,18 @@
           },
           {
             "class": "devicon-javascript-plain",
-            "name": "JavaScript"
+            "name": "Sass"
+          },
+          {
+            "class": "devicon-javascript-plain",
+            "name": "API" 
           }
         ]
       },
       {
         "title": "Mon Vieux Grimoire",
         "startDate": "2025",
-        "description": "Jedna z pierwszych aplikacji nad którymi pracowałam na stażu. Musiałam przygotować front-end dla aplikacji, która pokazuje modele 3D znanych budynków. To był także mój pierwszy projekt w frameworku Angular. Dużo się nauczyłam!",
+        "description": "Book rating site, which allows you to rate, save, and edit book information",
         "images": [
           "images/couverture/vieuxGrimoire.png",
           "images/portfolio/adventure/p2.jpg"
@@ -134,22 +138,22 @@
         "technologies": [
           {
             "class": "devicon-angularjs-plain",
-            "name": "Angular"
+            "name": "React"
           },
           {
             "class": "devicon-typescript-plain",
-            "name": "TypeScript"
+            "name": "Node.js"
           },
           {
             "class": "devicon-csharp-plain",
-            "name": "C#"
+            "name": "Express"
           }
         ]
       },
       {
         "title": "Nina Carducci",
         "startDate": "2025",
-        "description": "One of the first apps I was working on my internship. I had to develop front-end implementation for app that shows 3D models of known buildings. This was also my first project in Angular framework. I've learned a lot!",
+        "description": "SEO pour un site portfolio pour débugger, améliorer les accessibilités et références sociaux",
         "images": [
           "images/couverture/ninaCarducci.png",
           "images/portfolio/adventure/p2.jpg"
@@ -180,25 +184,26 @@
         "technologies": [
           {
             "class": "devicon-angularjs-plain",
-            "name": "Angular"
+            "name": "Javascript"
           },
           {
             "class": "devicon-typescript-plain",
-            "name": "TypeScript"
+            "name": "Lighthouse"
           },
           {
             "class": "devicon-csharp-plain",
-            "name": "C#"
+            "name": "Rich Snippet Google"
           }
         ]
       }
     ],
     "experience": [
       {
-        "company": "Sophie Bluel",
-        "title": "Front-End Developer",
-        "years": "",
-        "icon":"fab fa-js",
+        "company": "Bachelor Bac+3",
+        "title": "Concepteur d'applications",
+        "years": "09.2025 - ",
+        "icon":"/images/portfolio/nexa.jpg",
+        "cours":"Cours: JavaScript et API, UX et UI, approndissement de React, PHP etc",
         "mainTech": [
           "Javascript"
         ],
@@ -211,10 +216,11 @@
         "probleme":"Récupération des oeuvres par APIs"
       },
       {
-        "company": "Kasa",
-        "title": "Front-End Developer",
-        "years": "01.2018 - 09.2019",
-        "icon":"fab fa-react",
+        "company": "Bac+2",
+        "title": "Développeur informatique",
+        "years": "09.2024 - 03.2025",
+        "icon":"/images/portfolio/openclassroom.png",
+        "cours":"Cours: Html5, CSS3, JavaScript, React, Node.JS etc",
         "mainTech": [
           "React"
         ],
@@ -227,10 +233,10 @@
         "probleme":"strcuturation des composants du site par router"
       },
       {
-        "company": "Mon vieux grimoire",
-        "title": "Front-End Developer",
-        "years": "01.2018 - 09.2019",
-        "icon":"fab fa-node-js", 
+        "company": "Doctorat",
+        "title": "Littérature comparée",
+        "years": "11.2020 - ",
+        "icon":"/images/portfolio/Sorbonne.png",  
         "mainTech": [
           "React Node.js"
         ],
@@ -242,23 +248,7 @@
           
         ],
         "probleme":"création de système d'authentification"
-      },
-      {
-        "company": "Nina Carducci",
-        "title": "Front-End Developer",
-        "years": "",
-        "icon":"fab fa-js",
-        "mainTech": [
-          "Javascript"
-        ],
-        "technologies": [
-          "Html 5",
-          "CSS 3",     
-          "REST API",
-          "Google lighthouse"
-          
-        ],
-        "probleme":"Récupération des oeuvres par APIs"
       }
+      
     ]
   }

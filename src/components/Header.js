@@ -35,14 +35,34 @@ class Header extends Component {
     }, (props, prevProp) => true);
 
     return (
-      <header id="home" style={{ height: window.innerHeight - 140, display: 'block' }}>
+      <div>
+        <div className="header" style={{height:70,backgroundColor:this.state.checked ? '#353535' : '#e9d5a1',borderBottom:"none", justifyContent:"flex-end",}}> 
+      
+      <div className="buttons" >  
+        <button className="homeButton" onClick={this.handleBack}style={{fontSize:"20px",color:this.state.checked ? 'white' : '#353535'}}>
+          Accueil
+        </button>
+        <button onClick={()=> {document.querySelector(".contact").scrollIntoView({behavior:"smooth"})}}style={{fontSize:"20px",color:this.state.checked ? 'white' : '#353535'}}>Contact</button> 
+        <a
+          href={"https://github.com/ChangxuHUANG?tab=repositories"} 
+          target="_blank"
+          rel="noopener noreferrer"
+          className="githubButton"
+        >
+          <span className="iconify" data-icon="mdi:github" data-inline="false"style={{fontSize:"30px"}}></span>
+        </a>
+        <a href="/CV. HUANG Changxu.pdf" download>
+        <button  style={{ fontSize: "20px",color:this.state.checked ? 'white' : '#353535' }}>Mon CV</button></a> 
+      </div>
+       </div>
+      <header id="home" style={{ height: window.innerHeight - 140, display: 'block',paddingTop:"0px" }}>
         <div className="row aligner" style={{height: '100%'}}>
-          <div className="col-md-12">
+          <div className="col-md-12" style={{paddingTop:"50px"}}>
             <div>
               <span className="iconify header-icon" data-icon="la:laptop-code" data-inline="false"></span>
               <br/>
               <h1 className="mb-0">
-                <Typical steps={[name]} wrapper="p" />
+                <Typical steps={[name]} wrapper="p" /> 
               </h1>
               <div className="title-container">
                 <HeaderTitleTypeAnimation />
@@ -91,6 +111,7 @@ class Header extends Component {
           </div>
         </div>
       </header>
+      </div>
     );
   }
 }

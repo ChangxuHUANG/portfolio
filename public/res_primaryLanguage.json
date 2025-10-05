@@ -1,25 +1,25 @@
 {
     "basic_info": {
       "description_header": "Bonjour",
-      "description": "👋 Je m'appelle Changxu HUANG, je travaille du côté front-end en Javascript et avec HTML 5,CSS 3, React, j'utilise Node.js et Express pour accomplir les missions de Back-end. J'ai réalisé plusieurs projets de Front-end et Back-end dans le cadre de parcours de Openclassroom. ",
+      "description": "👋 Je m'appelle Changxu HUANG, je suis développeur web junior depuis un an. J’ai découvert ce métier lors d’une conférence et j’ai été immédiatement passionné par le processus de création d’un site web, qui combine logique, programmation et sens du design.\n\nJ’ai ensuite suivi une formation en développement web chez OpenClassrooms, où j’ai appris les bases de l’algorithmique et leur application dans différents langages. Aujourd’hui, je travaille principalement sur le front-end avec JavaScript, HTML5, CSS3 et React, tout en utilisant Node.js et Express pour le back-end. J’ai déjà mené à bien plusieurs projets personnels, aussi bien côté front-end que back-end, ce qui m’a permis de consolider mes compétences et d’adopter une approche complète du développement web. ",
       "section_name": {
         "about": "A propos de moi",
         "projects": "Projets",
         "skills": "Compétences",
-        "experience": "Liste des projets"
+        "experience": "Mon parcours" 
       }
     },
     "projects": [
       {
         "title": "Sophie Bluel",
         "startDate": "2024",
-        "description": "The most expanded application I had opportunity to work with. I've learned many technologies and my code was reviewed by awesome curator. Application handles all adoption processess and allows to store all evidence on adopting animals from animal shelter.",
+        "description": "Site portfolio pour une architecte d'intérieur, équipé d'un système de connexion et d'un système de mises à jour des travaux",
         "images": [
           "images/couverture/sophieBluel.png", 
           "images/portfolio/animal-shelter/p2.jpg"
         ],
         "imageBanner": 
-          "/images/portfolio/projetPhotographe/photographe-banner.jpg",
+          "/images/portfolio/projetPhotographe/photographe-banner1.png", 
         "imageContenu":[
           "/images/portfolio/projetPhotographe/Sophie Bluel - 4.png",
           "/images/portfolio/projetPhotographe/photographe-contenu.jpg" 
@@ -45,22 +45,22 @@
         "technologies": [
           {
             "class": "devicon-angularjs-plain",
-            "name": "Angular"
+            "name": "Javascript"
           },
           {
             "class": "devicon-typescript-plain",
-            "name": "TypeScript"
+            "name": "REST API"
           },
           {
             "class": "devicon-csharp-plain",
-            "name": "C#"
+            "name": "Html 5"
           }
         ]
       },
       {
         "title": "kasa",    
         "startDate": "2024",
-        "description": "Personal project for study subject. I was responsible for testing photography application that optimizes images with popular algorithms used by graphic editors like Pixlr or Adobe Photoshop. I've earned A grade :)",
+        "description": "Site de location des logements, qui se dote d'un caroussel interactif pour présenter les photos et des barres d'information dynamiques",
         "images": [
           "images/couverture/Kasa.png",
           "images/portfolio/photography/p2.jpg"
@@ -94,14 +94,18 @@
           },
           {
             "class": "devicon-javascript-plain",
-            "name": "JavaScript"
+            "name": "Sass" 
+          },
+          {
+            "class": "devicon-javascript-plain",
+            "name": "API" 
           }
         ]
       },
       {
         "title": "Mon Vieux Grimoire",
         "startDate": "2025",
-        "description": "One of the first apps I was working on my internship. I had to develop front-end implementation for app that shows 3D models of known buildings. This was also my first project in Angular framework. I've learned a lot!",
+        "description": "Site de notation de livres, qui permet de noter, sauvagarder, et modifier les informations du livre ",
         "images": [
           "images/couverture/vieuxGrimoire.png",
           "images/portfolio/adventure/p2.jpg"
@@ -134,22 +138,22 @@
         "technologies": [
           {
             "class": "devicon-angularjs-plain",
-            "name": "Angular"
+            "name": "React"
           },
           {
             "class": "devicon-typescript-plain",
-            "name": "TypeScript"
+            "name": "Node.js"
           },
           {
             "class": "devicon-csharp-plain",
-            "name": "C#"
+            "name": "Express"
           }
         ]
       },
       {
         "title": "Nina Carducci",
         "startDate": "2025",
-        "description": "One of the first apps I was working on my internship. I had to develop front-end implementation for app that shows 3D models of known buildings. This was also my first project in Angular framework. I've learned a lot!",
+        "description": "SEO pour un site portfolio pour débugger, améliorer les accessibilités et référencement local ",
         "images": [
           "images/couverture/ninaCarducci.png",
           "images/portfolio/adventure/p2.jpg"
@@ -180,85 +184,64 @@
         "technologies": [
           {
             "class": "devicon-angularjs-plain",
-            "name": "Angular"
+            "name": "Javascript"
           },
           {
             "class": "devicon-typescript-plain",
-            "name": "TypeScript"
+            "name": "Lighthouse"
           },
           {
             "class": "devicon-csharp-plain",
-            "name": "C#"
+            "name": "Rich Snippet Google"
           }
         ]
       }
     ],
     "experience": [
       {
-        "company": "Sophie Bluel",
-        "title": "Front-End Développeur",
-        "years": "",
-        "icon":"fab fa-js",
+        "company": "Bachelor Bac+3",
+        "title": "Concepteur d'applications",
+        "years": "09.2025 - ",
+        "icon":"/images/portfolio/nexa.jpg",
+        "cours":"Cours: JavaScript et API, UX et UI, approndissement de React, PHP etc",
         "mainTech": [
-          "Javascript"
+          "Nexa digital school"
         ],
         "technologies": [
-          "Html 5",
-          "CSS 3",     
-          "REST API"
+          "09.2025 -"     
           
         ],
         "probleme":"Récupération des oeuvres par APIs"
       },
       {
-        "company": "Kasa",
-        "title": "Front-End Développeur",
-        "years": "01.2018 - 09.2019",
-        "icon":"fab fa-react",
+        "company": "Bac+2",
+        "title": "Développeur informatique",
+        "years": "09.2024 - 03.2025",
+        "icon":"/images/portfolio/openclassroom.png",
+        "cours":"Cours: Html5, CSS3, JavaScript, React, Node.JS etc",
         "mainTech": [
-          "React"
+          "OpenClassrooms"
         ],
         "technologies": [
-          "Sass",
-          "JavaScript",
-          "TypeScript"
+          "09.2024 - 03.2025"
                  
         ],
         "probleme":"strcuturation des composants du site par router"
       },
       {
-        "company": "Mon vieux grimoire",
-        "title": "Front-End Développeur",
-        "years": "01.2018 - 09.2019",
-        "icon":"fab fa-node-js", 
+        "company": "Doctorat",
+        "title": "Littérature française et comparée",
+        "years": "11.2020 - ",
+        "icon":"/images/portfolio/Sorbonne.png",  
         "mainTech": [
-          "React Node.js"
+          "Université Paris Sorbonne"
         ],
         "technologies": [
-          "JavaScript",
-          "Sass",
-          "Express",
-          "MongoDB" 
+          "11.2020 - "
           
         ],
         "probleme":"création de système d'authentification"
-      },
-      {
-        "company": "Nina Carducci",
-        "title": "Front-End Développeur",
-        "years": "",
-        "icon":"fab fa-js",
-        "mainTech": [
-          "Javascript"
-        ],
-        "technologies": [
-          "Html 5",
-          "CSS 3",     
-          "REST API",
-          "Google lighthouse"
-          
-        ],
-        "probleme":"Récupération des oeuvres par APIs"
       }
+      
     ]
   }
