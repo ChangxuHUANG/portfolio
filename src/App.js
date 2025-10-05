@@ -9,7 +9,7 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects"; 
 import Skills from "./components/Skills";
 import ProjectDetailsModal from "./components/ProjectDetailsModal"; 
-import AOS from "aos";
+
 import "aos/dist/aos.css";
 import ScrollToTop from "./components/ScrollToTop";
 
