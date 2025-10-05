@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useRef }from "react";
+import React, { Component }from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";  
 import $ from "jquery";
 import "./App.scss";
