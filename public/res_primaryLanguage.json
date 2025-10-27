@@ -21,8 +21,8 @@
         "imageBanner": 
           "/images/portfolio/projetPhotographe/photographe-banner1.png", 
         "imageContenu":[
-          "/images/portfolio/projetPhotographe/Sophie Bluel - 4.png",
-          "/images/portfolio/projetPhotographe/photographe-contenu.jpg" 
+          "/images/portfolio/projetPhotographe/Sophie Bluel - 4.JPEG",
+          "/images/portfolio/projetPhotographe/photographe-contenu.JPEG" 
         ],
         "presentation":"Site portfolio de l'architecte d’intérieur",
         "fonctionnement":[
@@ -66,8 +66,10 @@
           "images/portfolio/photography/p2.jpg"
         ],
         "imageBanner": 
-          "/images/portfolio/projetKasa/kasa-banner.jpg",
-        "imageContenu":["/images/portfolio/projetKasa/kasa-contenu.jpg"], 
+          "/images/portfolio/projetKasa/Kasa-banner1.png",
+        "imageContenu":[
+                        "/images/portfolio/projetKasa/Kasa-contenu1.png",
+                      "/images/portfolio/projetKasa/Kasa-contenu2.png"],   
         "presentation":"Apllication web de location immobilière",
         "fonctionnement":[
           "Présentation des propriétés disponibles",

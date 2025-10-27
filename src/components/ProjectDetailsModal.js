@@ -5,7 +5,33 @@ import'./ProjectDetailModal.css';
 
 
 
+
 class ProjectDetailsModal extends React.Component {
+ 
+  handleNext =() =>{
+    const { resumeProjects, match, history } = this.props;
+    const { id } = match.params;
+    const currentIndex = resumeProjects.findIndex( 
+    (p) => p.title.replace(/\s+/g, "-") === id 
+  );
+    const nextProject = resumeProjects[currentIndex + 1];
+    if (nextProject)
+      history.push(`/projects/${nextProject.title.replace(/\s+/g, '-')}`)
+    } 
+    
+   handlePrev =() =>{
+    const { resumeProjects, match, history } = this.props;
+    const { id } = match.params;
+    const currentIndex = resumeProjects.findIndex( 
+    (p) => p.title.replace(/\s+/g, "-") === id 
+  );
+     const prevProject = resumeProjects[currentIndex - 1];
+    if (prevProject)
+      history.push(`/projects/${prevProject.title.replace(/\s+/g, '-')}`)
+    } 
+
+
+  
   handleBack = () => {
     this.props.history.push("/"); // Redirige vers la page d'accueil
   };
@@ -18,24 +44,56 @@ class ProjectDetailsModal extends React.Component {
   render() {
     // Récupérer l'ID du projet depuis l'URL
     const { id } = this.props.match.params;
-    const { resumeProjects } = this.props;
+    const  {resumeProjects}  = this.props;
     
-
+    if (!Array.isArray(resumeProjects)) {
+  return <p>Chargement en cours...</p>; // verifier si resumeProjet est bien chargé
+}
     const project = resumeProjects?.find(proj => proj.title.replace(/\s+/g, "-") === id);
+
+    const currentIndex = resumeProjects.findIndex( 
+    (p) => p.title.replace(/\s+/g, "-") === id 
+  );
+    const prevProject = resumeProjects[currentIndex - 1];
+    const nextProject = resumeProjects[currentIndex + 1];
+    
+     
+     
 
     if (!project) {
       return <p>Projet introuvable</p>;
+    } else{
+      console.log(project) 
+
     }
 
     return (
-      <div>
+      <div className="container-fluid">
         <div className="header">
-      <div className="name">Changxu HUANG</div>
+      <div className="h4 mb-0">Changxu HUANG</div>
       <div className="buttons">
-        <button className="homeButton" onClick={this.handleBack}>
+        <button className="btn btn-outline-secondary mr-2" onClick={this.handleBack}> 
+          
           Accueil
         </button>
-        <button onClick={this.scrollToFooter}>Contact</button> 
+       { prevProject && (
+        <button className="btn btn-outline-secondary mr-2" 
+        onClick={this.handlePrev}>
+    Précédent <i className="fas fa-arrow-left"></i>
+  </button>
+       )
+
+       }
+       { nextProject && (
+        <button className="btn btn-outline-secondary mr-2" 
+        onClick={this.handleNext}> 
+    Suivant <i className="fas fa-arrow-right"></i>
+  </button> 
+       )
+
+       }
+        
+        <button className="btn btn-outline-secondary mr-2"onClick={this.scrollToFooter}>Contact</button> 
         <a
           href={project.gitHub}
           target="_blank"
@@ -47,7 +105,7 @@ class ProjectDetailsModal extends React.Component {
       </div>
     </div>
       <div className="container-projet">
-        <h1 className="projetName">{project.title}</h1> 
+        <h1 className="projet-titre">{project.title}</h1> 
         <div className='banner-projet'>  
           <img src={project.imageBanner} alt="couverture"/>    
           {console.log("Image Banner Path:", project.imageBanner)} 
@@ -85,7 +143,7 @@ class ProjectDetailsModal extends React.Component {
           </div>
         <div className="contenu-projet">
           {project.imageContenu.map((photo,index)=>(
-            <img src={photo} key = {index }alt="photoProjet"/> ))}
+            <img style={{marginBottom:"3px"}} src={photo} key = {index }alt="photoProjet"/> ))}
          
         
         </div>

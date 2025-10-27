@@ -41,7 +41,7 @@
           "Créer le site web interactif et fonctionnel"
         ],
         "gitHub":"https://github.com/ChangxuHUANG/Projet-3",
-        "url": "",
+        "url": "/projects/Sophie-Bluel",
         "technologies": [
           {
             "class": "devicon-angularjs-plain",
@@ -86,7 +86,7 @@
           "Créer des applications web interactives et visuellement attrayantes"
         ],
         "gitHub":"https://github.com/ChangxuHUANG/Projet-5",
-        "url": "https://github.com",
+        "url": "/projects/kasa",
         "technologies": [
           {
             "class": "devicon-react-original",
@@ -134,7 +134,7 @@
           "Expérience avec l'architecture MVC et la création d'API RESTful"
         ],
         "gitHub":"https://github.com/ChangxuHUANG/projet6-VieuxGrimoire",
-        "url": "https://github.com",
+        "url": "/projects/Mon-Vieux-Grimoire",
         "technologies": [
           {
             "class": "devicon-angularjs-plain",
@@ -180,7 +180,7 @@
           "Optimisation de l'accessibilté"
         ],
         "gitHub":"https://github.com/ChangxuHUANG/Projet4",
-        "url": "https://github.com",
+        "url": "projects/Nina-Carducci", 
         "technologies": [
           {
             "class": "devicon-angularjs-plain",

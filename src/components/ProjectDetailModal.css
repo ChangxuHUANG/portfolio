@@ -38,3 +38,41 @@
     width: 40%;
     
 }*/
+.projet-titre {
+  font-size: 5.2rem; /* pour mobile */
+  font-weight: bold;
+  margin: 9px; 
+}
+/*.fonctionnement h2 {
+    font-size: 1.8rem;
+  }
+*/
+.sectionProjet {
+    font-size: 5.2rem; 
+}
+@media (max-width: 768px) { /* pour écrans moyens */
+  .projet-titre {
+    font-size: 3.5rem;
+  }
+  .titleProjet h1{
+    font-size: 3.5rem;
+  }
+  .infoProjet {
+    font-size: 3.5rem;
+  }
+  
+}
+
+@media (max-width: 430px) { /* pour grands écrans */
+  .projet-titre {
+    font-size: 1.8rem;
+    
+  }
+  .titleProjet h1{
+    font-size: 1.8rem;
+  }
+  .infoProjet {
+    font-size: 1.5rem;
+  }
+  
+}
